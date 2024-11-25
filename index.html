@@ -49,7 +49,7 @@
     <!-- isi undangan -->
     <div
         id="isiUndangan"
-        class="hidden overflow-hidden relative text-center mx-auto w-full max-w-md flex items-center justify-center flex-col"
+        class=" hidden overflow-hidden relative text-center mx-auto w-full max-w-md flex items-center justify-center flex-col"
         style="background-color: #D2EBE8;"
     >
     
@@ -117,5 +117,20 @@
             </div>
         </section>
     </div>
+
+    <audio src="MyLoveWestlife.mp3" id="music"></audio>
 </body>
+
+
+<script>
+const  btnBukaUndangan = document.getElementById("btnBukaUndangan");
+const  isiUndangan = document.getElementById("isiUndangan");
+const music = document.getElementById("music");
+
+// console. log("btnBukaUndangan");
+btnBukaUndangan.addEventListener("click", function() {
+  isiUndangan.classList.toggle("hidden");
+  music.play();
+})
+</script>
 </html>
